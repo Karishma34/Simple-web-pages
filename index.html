@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta http-equiv = "refresh" content = "120">
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/Style.css">
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    
+    <body style = "width: 99%">
+    <script src="scripts/script.js"> </script>
+    
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <!--The three T are written in these span class tags to be identifies later in the script tags and css so that it can be formatted and made to be responsive-->
+    <span class = "small" id ="smallT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "medium" id ="mediumT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "large" id ="largeT" style = "color: darkred; font-weight:bold;">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+  //Javascript used to change image font 
+  //document is where the element is taken from, the tagname is from which tag you are looking for and is set as variable.
+  var allArticles = document.getElementsByTagName("article")
+  //Known as the for loop it repeats the instuctions below to change font from small, medium large depending on which font is being clicked which is implemented with onclick.
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  
+  </script>
+<!-- styling and positioning for title-->
+  <h1 style="left: 52.5%; top:33.5%;text-transform: uppercase; ">
+      Welcome to ABD DANCE ASSOCIATION!</h1>    
+        
+    <div style="margin-top: 250px;" class="slideshow-container">
+      <div class="slides fade">
+         <img src="Images/Cover%20photos.JPG" class="test" >
+      </div>
+      <div class="slides fade">
+         <img src="Images/Coverphotos2.JPG" class="test">
+      </div>
+      <div class="slides fade">
+          <img src="Images/Coverphotos3.JPG" class="test">
+      </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+    <span class="dot" ></span>
+</div>
+    
+<script>
+//setting a variable
+var slideIndex = 0;
+showSlides();
+//document is where the element is taken from, the Classname is the specific name set for a class of tags.This is used to identify the tags with class name slides. The number of slides is equivalent to the length of the slides whicg identifies how many times the for loop needs to be repeated for each class tag.
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+ // Change image every 10 seconds
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+<br>
+<!--Navigation Bar that navigates across main pages-->
+<div id = "ScrollNavBar">
+        
+         <nav>
+             
+	         <a href="index.html">HOME</a>
+	         <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>    
+        
+</div>
+<!-- Area where the latest updates will be stated in boxes using div tags and unordered list. Images are inserted with img tags -->
+<div id = "content">
+<h2>Latest Updates:</h2>
+<div id="example"><img src = "Images/onlineperformance.png" width = 70px height = 70px >
+                   <ul id ="index">Come join us as we explore through the dance performances onlin on Friday, December 4th! </ul></div>
+        </div>
+<div id = "content">
+<div id="example"><img src = "Images/Break%20dance.png" width = 70px height = 70px >
+                   <ul id = "index">Join us on this new adventure as we explore through the origin of break dance!<br>
+                   Every Fridays 6 30pm - 9pm!</ul></div>
+    
+    
+<div id = "Report" style = "padding-top:10px;"><button class="button button1"><a href = "Report.html">Direct to Report HTML</a></button></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>About</title>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style/Style.css">
+         <link rel="stylesheet" href="style/About.css">
+         </head>
+         <body id = "Aboutus" style = "width:75%">
+    
+       <script src="scripts/script.js"> </script>
+    <div id = "ScrollNavBar">
+        
+                <nav>
+             
+	         <a href="index.html">HOME</a>
+	        <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>  
+        
+    
+  </div>
+        
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "medium" id ="mediumT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "large" id ="largeT" style = "color: darkred; font-weight:bold;">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+        
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  
+  </script>
+        <h1 style="left: 52.5%; top:23.5%;">About Us</h1>
+        <br>
+     
+
+
+    <div class="grid-container">
+    <div>Certification
+        <p style = "font-family: monospace;font-weight:10; font-size: 20px;">We are from a prestigious academy taking in students with the eagerness to learn. 13 years of starting up this academy, we have encountered various events and have proudly accomplished honours in most of them. This includes the Certification of Discipline from the Fine Arts Association in the Year 2015, Certification of Unique talents from the Arts Association in the Year 2018. </p>
+          </div>
+    <div>National Awards
+        <p style = "font-family: monospace;font-weight:10; font-size: 20px;">Through out the 13 years of building up this academy we have achieved 14 various prestigious awards from the Association itself and also from all over the world as the students get the opportunity to participate in national competitions! We would send in students with the courage, drive and determination every year. The most prestigious award was the National Youth's Award which was awarded to our exemplary student of ABD Dance Association who was an all-rounder mastering almost 4 dance forms at the age of 15.</p></div>
+    <div>Classes
+        <p style = "font-family: monospace;font-weight: 10; font-size:20px;">In the 13 years of running this dance association, we have been able to coach 6 different dance forms each containing its own speciality. Our students often learn at least 2 dance forms during their learning experience. Join us now on our Form Page where you can sign up to be a member of this association!</p></div>  
+    <div>Vision
+        <p style = "font-family: monospace;font-weight:10; font-size: 20px;">Our students are the pride of our academy as they exhibit good values like Care, Concern, Pride, Harmony, Sympathy, Honesty and Resilience. We envision each of our students to possess these qualities to be a compassionate dancer. We also aim to get our students be a Global Thinker with a Mission and Kindness. No one should be left behind and none should present themselves as superior. These are some abilities we want our students to possess as an association of excellence. </p></div>
+    <div>Mission
+        <p style = "font-family: monospace;font-weight:10; font-size: 20px;">
+        CARE.CONCERN.PRIDE.HARMONY.SYMPATHY.HONESTY.RESILIENCE.<br>
+        This is our mission to our students. Live by these values and one day succeed to be a wonderful dancer admired by all.
+        </p></div>
+     
+</div>
+
+         </body>
+         <footer></footer>
+             
+             
+    
+   
+</html>

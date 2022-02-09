@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>About</title>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style/Style.css">
+         <link rel="stylesheet" href="style/Form.css">
+         </head>
+         <body id = "Aboutus">
+    
+    
+        
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT" >T</span>
+    <span class = "medium" id ="mediumT" >T</span>
+    <span class = "large" id ="largeT">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+        
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }  
+  
+  </script>
+ 
+    <div class = "wrapper">
+    <h2>Children's Particulars</h2>
+    <div id="error_message"></div>
+        
+    <form id="myform" onsubmit="return validation()">
+        
+        <div class="input_field">
+        <label for ="name" style = "padding-left: 300px;padding-right: 100px;">Full name:</label>
+        <input type="text" placeholder = "Full name" id="name">
+        </div>
+        <div class="input_field">
+        <label for ="name" style = "padding-left: 300px;padding-right: 35px">Parent's Full name:</label>
+        <input type="text" placeholder = "Full name" id="name" required>
+        </div>
+        <div class = "input_field">
+        <label for ="email" style = "padding-left: 300px;padding-right: 105px;">Email-ID:</label>
+        <input type = "text" placeholder="Email" id="email">
+        </div>
+        <div class = "input_field">
+        <label for ="course" style = "padding-left: 300px;padding-right: 50px;">Enter Dance form:</label>
+        <input type = "text" placeholder="Enter accordingly" id="forms">
+        </div>
+        <div class = "input_field">
+        <label for ="address" style = "padding-left: 300px;padding-right: 15px;">Enter mailing address:</label>
+        <input type = "text" placeholder="Enter mailing address" id="mail" required>
+        </div>
+        <div class = "input_field">
+        <label for ="phone" style = "padding-left: 300px;padding-right: 80px;padding-right: 80px;">Phone number:</label>
+        <input type = "text" placeholder="Phone" id="phone">
+        </div>
+        <div class = "input_field">
+        <label for ="phone" style = "padding-left: 300px;padding-right: 45px;">Emergency Contact:</label>
+        <input type = "text" placeholder="Phone" id="phone" required>
+        </div>
+        <div class = "input_field">
+        <label for ="gender" style = "padding-left: 300px;padding-right: 120px;">Gender:</label>
+        <input type = "text" placeholder="Gender" required>
+        </div>
+        <div class = "input_field">
+        <label for ="age" style = "padding-left: 300px;padding-right: 140px;">Age:</label>
+        <input type = "number" placeholder="age" required>
+        </div>
+        <div class = "input_field">
+        <label for ="date" style = "padding-left: 300px;padding-right: 70px;">Date of Birth:</label>
+        <input type = "date" placeholder="date" required>
+        </div>
+       <div class = "input_field" style = "padding-right:100px;">
+            <textarea id = "message" placeholder="Additional Information"></textarea>
+        </div>
+
+        <div class = "btn">
+        <input type = "submit">
+        </div>
+        <div class = "btn">
+        <input type = "reset">
+        </div>
+        <div class = "btn" style= "padding-top: 15px; padding-left: 650px;">
+        <a id = "nextpage"  href = "FeedBack.html">Enter next page</a>
+        </div>
+        </form>
+    </div>
+ <script src="scripts/script.js"> </script>
+    <script src = "scripts/form.js"></script>
+    <div id = "ScrollNavBar">
+        <nav>
+	       <a href="index.html">HOME</a>
+	       <a href="classes.html">CLASS</a>
+	       <a href="About.html">ABOUT</a>
+	       <a href="parent.html">PARENT PAGE</a>
+	       <a href="blog.html">BLOG</a>
+           <a href="Form.html">FORM</a>
+         
+         </nav>    
+             </div>
+    </body>
+    </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Parent's page</title>
+     <head>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+  
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style/Style.css">
+         <link rel="stylesheet" href="style/parent.css">
+       </head>
+         
+    <body>
+    
+        <script src="scripts/script.js"> </script>
+    <div id = "ScrollNavBar">
+                
+        <nav>
+             
+	         <a href="index.html">HOME</a>
+	         <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>   
+        
+    
+  </div>
+        
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT">T</span>
+    <span class = "medium" id ="mediumT">T</span>
+    <span class = "large" id ="largeT">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+        
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  
+  </script>
+        
+    <h1 style = "top:23.5%;">Dear Parents...</h1>
+        
+    <div class= d-inline align="center">
+    <div class= "box-1"> 
+        <h3>Volunteering</h3>
+        <p style = "font-family:cursive; color:white; font-size:15px; background-color: darkred; padding-top: 50px;">Experiences from former dance moms...<br>
+        Dance Mom 1: As a dancer, I had faced many challenges along the way to come to a level of recognition and I am glad that my daughter got a placing in this academy as she did not have to face the hurdles I did to reach to the same level as me. I am also thankful to the academy for the great opportunity and I hope the academy continues to engage in this activity.<br>
+        Please note that due to privacy reasons the commenter's profile would not be added in this webpage
+        </p>
+        </div>
+        <br>
+    <div class= "box-1"> 
+        <h3>Sign Up</h3>
+        <p style= "font-family:cursive; color:white; font-size:15px; background-color: darkred; padding-top: 75px;">Instructions on how to submit...<br>
+            <br>
+        Step 1:Please click on the "Form" button located on the navigation bar
+        <br>
+        Step 2: Fill in the particulars of parent and the students
+        <br>
+        Step 3: Once submitted you will be directed to the feedback form where you can comment on any concerns you have regarding your admission
+        </p>
+        
+        </div>
+        <br>
+    <div class= "box-1"> 
+        <h3>Duties performed by volunteers </h3>
+        <p style = "font-family:cursive; color:white; font-size:15px; background-color: darkred; padding-top: 25px; ">Checklist:<br>
+        As a volunteer, you would be part of the committee organising activities where you would get to experience the administrative side of organising skills. In order to be a volunteer, you should be dedicated and fully interested. Children of these volunteers would be given discounts on annual fees which would be discussed in person.
+        <br>
+        1) Organising the annual dance competition within the community
+        <br>
+        2) Fundraiser Charity Events 
+        <br>
+        3) Food and registration for future competitions within the other dance academies</p>
+        
+        </div>
+    </div>
+
+    
+    </body>
+    <footer></footer>
+</html>

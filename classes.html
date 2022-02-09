@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>Class</title>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style/Style.css">
+         <link rel="stylesheet" href="style/classes.css">
+    
+    </head>
+    
+    <body>
+    
+         <script src="scripts/script.js"> </script>
+    <div id = "ScrollNavBar">
+               
+              <nav>
+             
+	         <a href="index.html">HOME</a>
+	        <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>     
+        
+    
+  </div>
+        
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "medium" id ="mediumT" style = "color: darkred; font-weight:bold;">T</span>
+    <span class = "large" id ="largeT" style = "color: darkred; font-weight:bold;">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  </script>
+           
+        <table style = "width:50%; text-align: center;">
+        
+            <tr id="row1">
+            <th id = "TypesofClasses"><h1 style = "top:30%;">Types of Classes</h1></th>
+            </tr>
+            
+            <tr id="row2">
+                <th id = "examples">
+                    <p>
+                        <img src = "Images/Jazz.jpg" width = 60% height = 100% ><br>
+                    Jazz
+                    </p>
+                    <br>
+                    <button class="button button1"><a href = "Jazz.html">Read More</a></button>
+                </th>
+            
+            </tr>
+            <tr id="row3">
+                 <th id = "examples">
+                    <p>
+                        <img src = "Images/ballet.jpeg" width = 100% height = 100%>
+                    Ballet
+                   </p>
+                   <br>
+                 <button class="button button1"><a href = "Ballet.html">Read More</a></button></th>
+             
+            </tr>
+            <tr id = "row4">
+                <th id = "examples">
+                    <p>
+                        <img src = "Images/Fusion.jpg" width = 100% height = 100%>
+                    Fusion
+                    </p>
+                    <br>
+                    <button class="button button1"><a href = "Fusion.html">Read More</a></button>
+                </th>
+             
+                
+            
+            </tr>
+             <tr id = "row5">
+            
+               <th id = "examples">
+                 <p>
+                     <img src = "Images/Tap%20Dancing.jpg" width = 100% height = 100%>
+                    Tap Dancing
+                 </p>
+                     <br>
+                     <button class="button button1"><a href = "Tap%20dancing.html">Read More</a></button>
+                </th>
+            
+            </tr>
+             <tr id = "row6">
+            
+                 <th id = "examples">
+                    <p><img src = "Images/Classical.webp" width = 100% height = 100%>
+                    Classical
+                    </p>
+                    <br>
+                    <button class="button button1"><a href = "Classical.html">Read More</a></button>
+                </th>
+            <tr id = "row7">
+              
+                 <th id = "examples">
+                    <p><img src = "Images/Theatre.jpg" width = 100% height = 100%>
+                    Theatre
+                    </p>
+                    <br>
+                    <button class="button button1"><a href = "Theatre.html">Read More</a></button>
+                </th>
+                
+            </tr>    
+        </table>
+         
+        
+        <style>p{
+                  margin: 0px 0px 50px 250px;
+            }</style>
+        
+    <div id = "bar"></div>
+        <script>
+        var bar = document.getElementById("bar");
+        window.addEventListener("scroll", function(){
+        bar.style.width = pageYOffset
+        })
+        </script>
+    
+     
+    </body>
+   
+   
+
+</html>

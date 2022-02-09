@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-gap: 10px;
+  background-color:hidden;
+  padding: 50px;
+  padding-left:300px;
+ 
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid darkred;
+  text-align: center;
+  font-size: 30px;
+    width:700px;
+}
+
+div{
+    color:darkred;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-style:italic;
+}
+#smallT,#mediumT,#largeT
+{
+    cursor:pointer;
+    position: 500px;
+}

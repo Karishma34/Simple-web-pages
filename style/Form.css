@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    font-family: monospace;
+}
+
+
+#Aboutus{background: hidden;
+    object-fit:contain;
+    height:1100px;
+}
+
+.wrapper{
+    position:absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1000px;
+    width: 100%;
+    background: brown;
+    background-blend-mode: normal;
+    padding:25px;
+    border-radius: 5px;
+    box-shadow:4px 4px 2px rgba(210,105,30,1);
+    color:white;
+    height:990px;
+   
+}
+
+
+.wrapper h2{
+    text-align:center;
+    margin-bottom:20px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:white;
+}
+
+.wrapper .input_field{
+    margin-bottom: 40px;
+}
+
+.wrapper .input_field input[type="text"]
+
+.wrapper textarea{
+    width:100%;
+    border:1px solid #e0e0e0;
+    padding:10px;
+    
+}
+
+.wrapper textarea{
+    width:950px;
+    resize:none;
+}
+
+.wrapper .btn input[type="submit"]{
+    border:0;
+    margin-top:5px;
+    padding:10px;
+    width:100%;
+    background:#fece0c;
+    color:#332902;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer;
+    
+}
+.wrapper .btn input[type="reset"]{
+    border:0;
+    margin-top:5px;
+    padding:10px;
+    width:100%;
+    background:#fece0c;
+    color:#332902;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer;
+    
+}
+.btn #nextpage{
+   border:0;
+    margin-top:15px;
+    padding:5px;
+    width:100%;
+    background:#fece0c;
+    color:#332902;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-weight:bold;
+    border-radius:25px;
+    cursor:pointer; 
+    text-decoration: none
+}
+
+
+
+.wrapper #error_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: darksalmon;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    
+}
+

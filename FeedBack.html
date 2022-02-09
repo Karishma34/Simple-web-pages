@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>About</title>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+         <meta name = "author" content = "ThemePark Coordinator">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta name = "description" content = "Theme Park Dining">
+         <meta name = "keywords" content = "Family theme park dining ">
+         <link rel="stylesheet" href="style/Style.css">
+         </head>
+         <body id = "Aboutus">
+    
+       <script src="scripts/script.js"> </script>
+    <div id = "ScrollNavBar">
+               
+        <nav>
+             
+	         <a href="index.html">HOME</a>
+	        <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>   
+        
+    
+  </div>
+        
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT">T</span>
+    <span class = "medium" id ="mediumT">T</span>
+    <span class = "large" id ="largeT">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+        
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  
+  </script>
+             
+  <h1 style = "top:23.5%;">FEEDBACK</h1>
+  <form>
+             <ul style = "right:30%; color:darkred;"> 
+             
+             Thank you for your submissions and we would hope to see here soon... 
+             
+             <div class="messageBox" style = "text-align: center;">
+             <label for="message">Feedback</label><br>
+             <textarea id="message" cols="82" rows="8" required
+             placeholder="Feel free drop in any comments on the fill up form or any questions you have regarding the application process"></textarea>
+                 
+                 
+              
+             <div class="messageBox" style = "text-align: center;">
+             <label for="message">Comments:</label><br>
+             <textarea id="message" cols="82" rows="8" required
+             placeholder="Within 150 words"></textarea>
+             </div> 
+             </div>    
+             </ul>
+             <style>
+                 ul{font-size:20px;
+                    font-family: monospace;
+                    text-align: center;}
+             </style>
+             
+             
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+                   <br>
+            <label for = "Submit" style = "color:darkred; font-weight:bold; font-family:monospace; font-size:20px;" >Click to Submit:</label>
+            <button class="button button1">
+            <input type="submit" style = "border:hidden; color:darkred;"></button>
+          
+                 
+  </form>
+    </body>
+</html>

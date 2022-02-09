@@ -1,0 +1,212 @@
+/*Home Page*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pacifico&display=swap');
+body{background-image:url('../Images/Background.jpg');
+     width:80%;
+     height: 100%;
+     left:55%;}
+
+h6{font-family: fantasy;
+   color:burlywood }
+h1{font-size: 1em;}
+/*Content Page Info*/
+#onlineclasses{background-image: url('../Images/onlineclasses.jpg');
+               align-content: center;
+              }
+
+#onlineperformances{background-image: url('../Images/onlineperformances.jpg')}
+
+#Choreography{background-image: url('../Images/Choreography.jpg');
+              }
+a{font-family:monospace;
+  font-size: 20px;
+  color: firebrick;
+  }
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h7{background-color: rgba(255,255,255, 0.75);
+  align-content:flex-end;
+   color: rgb(78,51,70);
+font-family: sans-serif;
+}
+nav,option {
+  overflow:hidden;
+  background-color:	#D48546;
+  padding-right:100px;
+  padding-left:100px;
+  font-style:oblique;
+  right:50%;
+  padding-bottom: 30px;
+  padding-top: 30px
+}
+nav{width:105%;}
+nav a, option {
+  float:inherit;
+  color:darkred;
+  font-weight: 600;
+  text-align: center;
+  padding: 38px;
+  text-decoration: none;
+  font-size: 30px;
+  justify-content: center;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a.active {
+  
+  color:brown;
+}
+
+option{float: inherit;
+  color: burlywood;
+  text-align: center;
+  padding: 72px 74px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-style: oblique}
+
+option {
+  overflow: hidden;
+  background-color: #F6DEC0;
+  padding: 20px
+}
+
+.small{font-size:12px}
+.medium{font-size:15px}
+.large{font-size:20px}
+
+#smallT,#mediumT,#largeT
+{
+    cursor:pointer;
+    position: 500px;
+    color:darkred;
+    font-weight:bold;
+    font-family: sans-serif;
+}
+h1{font-family:sans-serif;
+   color:darkred;
+   font-style: oblique;
+   font-family: 'Oswald', sans-serif;
+   font-family: 'Pacifico', cursive;
+   content: ''; 
+   font-size: 3em; 
+   position: absolute; 
+   top: 20%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   color: transparent; 
+   background: #653221; 
+   -webkit-background-clip: text; 
+   text-shadow: 2px 5px 5px  
+   rgba(255,255,255, 0.3);
+    padding:10px;
+}
+   ul{font-family: monospace}
+   body{height:1200px;
+   left:50%}
+h2{
+    font-family:'Pacifico', cursive;
+    padding-top:50px;
+}
+#ScrollNavBar{background-color: lightblue; width:1500px;
+                              position: fixed; top:0px;}
+
+
+ul {list-style-type: none;}
+
+
+h3{font-family: monospace;
+    color:darkblue;
+    font-size: 23px;
+    
+}
+
+/*class*/
+h5{text-align: center;
+   font-family:monospace}
+
+
+
+
+
+#Aboutus{height: 1500px}
+
+/*Fill up form*/
+#form{
+    cursor:pointer;
+    text-align: left;
+    font-family: monospace;
+    font-size: 16px;
+    color:beige;
+    padding: 50px;
+    border:hidden;
+    box-shadow: 10px 10px 5px brown;    
+    align-content: center;
+    text-align: center;
+    
+}
+
+#Fill up form{
+    border-left-width: thin;
+    border-top-color: burlywood;
+    height: 0;
+    position: fixed;
+    bottom:0;
+    
+}
+#bar{
+    border-bottom: 10px solid burlywood;
+    width:0;
+    position:fixed;
+    top:0; left:0;
+    
+}
+img{object-fit: cover;
+    text-align: center;}
+
+/*parents page*/ 
+
+
+
+.box-1{
+
+    border-width: medium;
+    border-radius: 01px;
+    border-color:hidden ;
+    width: 1200px;
+    background: hidden;
+}
+
+.box-1 p{
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+  background-color:whitesmoke;
+  border:line;
+  border-color:antiquewhite;
+  box-shadow: 10px 10px 5px rgb(169,122,87);
+  margin: 0px 0px 0px 250px;
+  font-weight: bold;
+}
+#example {
+  box-sizing: content-box;  
+  width: 750px;
+  height: 180px;
+  padding: 15px;  
+  border: 3px solid darkred;
+  background-color: darkred;
+}
+#content{
+    padding-left: 140px; 
+    padding-bottom:15px;
+    padding-bottom:15px;
+}
+#index{font-family:cursive;
+    color:white;}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <title>Blog</title>
+         <meta http-equiv = "refresh" content = "120">
+         <meta charset = "UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="style/Style.css">
+         <link rel="stylesheet" href="style/blog.css">
+             
+
+    </head>
+<body>
+    <div id = "ScrollNavBar">
+                
+                <nav>
+             
+	         <a href="index.html">HOME</a>
+	        <a href="classes.html">CLASS</a>
+	         <a href="About.html">ABOUT</a>
+	         <a href="parent.html">PARENT PAGE</a>
+	         <a href="blog.html">BLOG</a>
+             <a href="Form.html">FORM</a>
+            
+         </nav>    
+        
+    
+  </div>
+        
+  
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <span class = "small" id ="smallT">T</span>
+    <span class = "medium" id ="mediumT">T</span>
+    <span class = "large" id ="largeT">T</span>
+  <br>
+  <br>
+  <br>
+  <script>
+        
+  var allArticles = document.getElementsByTagName("article")
+
+  for(var i = 0; i<allArticles.length;i++)
+  {
+    allArticles[i].style.textAlign = "center"
+  }
+  document.getElementById("smallT").onclick = function()
+  {
+    changeSize("small")
+  }
+  document.getElementById("mediumT").onclick = function()
+  {
+    changeSize("medium")
+  }
+  document.getElementById("largeT").onclick = function()
+  {
+    changeSize("large")
+  }
+  function changeSize(c)
+  {
+    document.getElementsByTagName("body")[0].className=c
+  }     
+  
+  </script>
+        
+<ul id = "Blogs by our outstanding students">
+            <h1 style = "top:23.5%;">Latest Blogs</h1>
+<div id = "content">
+<h2>Blog 1:</h2>
+<div id="example1"><img src = "Images/Blog%20icon.png" width = 70px height = 70px >
+                   <p>Through my experience as a dancer, I learnt many values, morals that has helped me achieve greater heights as a dancer, a student, a family member and certainly as a mom. Many may think that this is just a myth. That it is not true. But that is not the case. As a dancer, I learnt more about the outside world, the people around me. The most valuable lesson I learnt is that no one can help you but yourself.I am glad to stand proud as a model citizen, a family member and a mom. This would not have happened if I hadn't been a former student of this association. I am certainly glad to volunteer myself in this association as a volunteer. More Information on this volunteering scheme would be available in the Parent Page.</p></div>
+
+<h2>Blog 2:</h2>
+<div id="example1">
+    <img src = "Images/Blog%20icon.png" width = 70px height = 70px >
+                   <p>Through my experience as a dancer, I learnt many values, morals that has helped me achieve greater heights as a dancer, a student, a family member and certainly as a mom. Many may think that this is just a myth. That it is not true. But that is not the case. As a dancer, I learnt more about the outside world, the people around me. The most valuable lesson I learnt is that no one can help you but yourself.I am glad to stand proud as a model citizen, a family member and a mom. This would not have happened if I hadn't been a former student of this association. I am certainly glad to volunteer myself in this association as a volunteer. More Information on this volunteering scheme would be available in the Parent Page.</p>
+</div>
+
+    
+<h2>Blog 3:</h2>
+<div id="example1">
+    <img src = "Images/Blog%20icon.png" width = 70px height = 70px >
+                   <p>Through my experience as a dancer, I learnt many values, morals that has helped me achieve greater heights as a dancer, a student, a family member and certainly as a mom. Many may think that this is just a myth. That it is not true. But that is not the case. As a dancer, I learnt more about the outside world, the people around me. The most valuable lesson I learnt is that no one can help you but yourself.I am glad to stand proud as a model citizen, a family member and a mom. This would not have happened if I hadn't been a former student of this association. I am certainly glad to volunteer myself in this association as a volunteer. More Information on this volunteering scheme would be available in the Parent Page.</p>
+</div>
+
+    </div>
+
+        </ul>
+        
+
+    
+</body>
+    
+</html>
